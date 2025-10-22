@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest-Style Homepage</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Pinspired</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Pinspired</h1>
+    <p>Discover and share amazing ideas for art, travel, and design!</p>
+    <button id="exploreBtn">Explore Now</button>
+  </section>
+
+  <!-- Gallery Section -->
+  <h2 class="section-title">Featured Collections</h2>
+
+  <div class="gallery" id="gallery">
+    <div class="photo">
+      <img src="https://as2.ftcdn.net/v2/jpg/05/00/23/19/1000_F_500231984_2O55X7pVEYwsANDzJd0EqFl4a79kW8A9.jpg" alt="Nature">
+      <div class="photo-info">Nature</div>
+      <div class="photo-desc">Breathtaking view of the Batad Rice Terraces in the Philippines — a UNESCO World Heritage site surrounded by lush greenery.</div>
+    </div>
+
+    <div class="photo">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj8M-E0wMJ0krdCG5yxj8yxWCwIMRJZE7bSK64uKuhcnW7KovanFgHDhvceAH_OYHFk8lg2uwS66O5eWOoUzMLR-MUfTOeK7geIpje00YJ1JdHqEfd1ocY9cQaVJQei4_bdWKGTuRok2gTFEfEjVvYg9SFvx2xkvmFkn1nN1Riecd06YKkXIsuJYp1XI0/s625/shutterstock_249702325-removebg-preview.png" alt="Travel">
+      <div class="photo-info">Travel</div>
+      <div class="photo-desc">Explore the world one destination at a time — from sandy beaches to bustling cities full of culture and life.</div>
+    </div>
+
+    <div class="photo">
+      <img src="https://cdn.pixabay.com/photo/2024/05/10/10/51/food-8752928_1280.jpg" alt="Food">
+      <div class="photo-info">Food</div>
+      <div class="photo-desc">Delicious gourmet dishes that inspire your next culinary adventure — taste, texture, and creativity combined.</div>
+    </div>
+
+    <div class="photo">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.gkarkO4AXPb52sN42DZfvQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Art">
+      <div class="photo-info">Art</div>
+      <div class="photo-desc">Vibrant artistic creations that capture imagination and emotion — expressing beauty through colors and form.</div>
+    </div>
+  </div>
+
+   <!-- Website Description Section -->
+  <section style="text-align:center; padding:30px 20px; max-width:800px; margin:auto; color:#444;">
+    <h3>About Pinspired</h3>
+    <p>
+      Pinspired is a simple, Pinterest-style homepage that celebrates creativity and inspiration. 
+      Discover amazing photos of nature, travel, food, and art — all designed to spark your imagination 
+      and help you explore the world through visuals. 
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pinspired. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll when clicking the "Explore" button
+    document.getElementById('exploreBtn').addEventListener('click', () => {
+      document.querySelector('.gallery').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>
